@@ -4,7 +4,7 @@ import unittest
 class TestFunkcion(unittest.TestCase):
     def feet_to_meters(self):
         self.assertAlmostEqual(transform_fce.feet_to_meters(100), 30.48)
-        self.assertAlmostEqual(transform_fce.feet_to_meters(200), 50) # zkouška špatných dat
+        #self.assertAlmostEqual(transform_fce.feet_to_meters(200), 50) # zkouška špatných dat
         self.assertIsInstance(transform_fce.kelvin_to_celsius("100"), ValueError, "Nastala chyba")
         #assert transform_fce.kelvin_to_celsius(200) == -73
 

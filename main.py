@@ -12,7 +12,12 @@ city = "Valtice"
 url = base_url+"appid="+api_key+"&q="+city
 
 #print(url)
-res = requests.get(url).json()
+try:
+    res = requests.get(url).json()
+except:
+    print("Problém s url adresou!")
+#else:
+#    res = requests.get(url).json()
 #print(res)
 
 # práce s JSON, který jsem z Openweather uložil do res
@@ -21,6 +26,3 @@ print(f"Stát: {res["sys"]["country"]}\nMěsto: {res["name"]}\nNadmořská výš
 print(f"Teplota ve stupních Celsia: {round(kelvin_to_celsius(res["main"]["temp"]),1)}")
 print(f"Rychlost větru: {res["wind"]["speed"]} km/h")
 print("################################")
-#url2 = "https://api.openweathermap.org/energy/1.0/solar/interval_data?lat=48.7407&lon=16.755&date=2025-04-21&interval=1h&tz=+01:00&appid="+api_key
-#res2 = requests.get(url2).json()
-#print(res2)

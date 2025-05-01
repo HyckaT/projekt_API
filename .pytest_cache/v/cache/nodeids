@@ -1,0 +1,8 @@
+[
+  "tests/test_fce.py::TestFunkcion::test_feet_to_meters",
+  "tests/test_fce.py::TestFunkcion::test_kelvin_to_celsius",
+  "tests/test_fce.py::test_feet_to_meters",
+  "tests/test_fce.py::test_kelvin_to_celsius",
+  "tests/test_funkce.py::test_feet_to_meters",
+  "tests/test_funkce.py::test_kelvin_to_celsius"
+]
